@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.1.1 r1855137">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Saturn 1000 Test" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="host" elementType="Argument">
+            <stringProp name="Argument.name">host</stringProp>
+            <stringProp name="Argument.value">staging.castechcentre.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Host of Webservice</stringProp>
+          </elementProp>
+          <elementProp name="terminalSN" elementType="Argument">
+            <stringProp name="Argument.name">terminalSN</stringProp>
+            <stringProp name="Argument.value">1000000000000454</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="store_FilePath" elementType="Argument">
+            <stringProp name="Argument.name">store_FilePath</stringProp>
+            <stringProp name="Argument.value">D:\</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="encTermSN" elementType="Argument">
+            <stringProp name="Argument.name">encTermSN</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="cmMode" elementType="Argument">
+            <stringProp name="Argument.name">cmMode</stringProp>
+            <stringProp name="Argument.value">AA==</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="sessionID" elementType="Argument">
+            <stringProp name="Argument.name">sessionID</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="nextPath" elementType="Argument">
+            <stringProp name="Argument.name">nextPath</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DLHS_Path" elementType="Argument">
+            <stringProp name="Argument.name">DLHS_Path</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="getinfo_Data" elementType="Argument">
+            <stringProp name="Argument.name">getinfo_Data</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="updateList_ID" elementType="Argument">
+            <stringProp name="Argument.name">updateList_ID</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="updateList" elementType="Argument">
+            <stringProp name="Argument.name">updateList</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="downloadHS_Data" elementType="Argument">
+            <stringProp name="Argument.name">downloadHS_Data</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="download_Index" elementType="Argument">
+            <stringProp name="Argument.name">download_Index</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="download_TotalFileCount" elementType="Argument">
+            <stringProp name="Argument.name">download_TotalFileCount</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="download_FilePath" elementType="Argument">
+            <stringProp name="Argument.name">download_FilePath</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="download_FileName" elementType="Argument">
+            <stringProp name="Argument.name">download_FileName</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="download_FileSize" elementType="Argument">
+            <stringProp name="Argument.name">download_FileSize</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="download_Position" elementType="Argument">
+            <stringProp name="Argument.name">download_Position</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="download_CompleteSize" elementType="Argument">
+            <stringProp name="Argument.name">download_CompleteSize</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="download_Data" elementType="Argument">
+            <stringProp name="Argument.name">download_Data</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="login_Data" elementType="Argument">
+            <stringProp name="Argument.name">login_Data</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="logout_Data" elementType="Argument">
+            <stringProp name="Argument.name">logout_Data</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="fileDone" elementType="Argument">
+            <stringProp name="Argument.name">fileDone</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Status" elementType="Argument">
+            <stringProp name="Argument.name">Status</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="false">
+        <collectionProp name="DNSCacheManager.servers">
+          <stringProp name="-469317610">8.8.8.8</stringProp>
+        </collectionProp>
+        <boolProp name="DNSCacheManager.clearEachIteration">false</boolProp>
+        <boolProp name="DNSCacheManager.isCustomResolver">true</boolProp>
+      </DNSCacheManager>
+      <hashTree/>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">Charset</stringProp>
+            <stringProp name="Header.value">UTF-8</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain">${host}</stringProp>
+        <stringProp name="HTTPSampler.port">443</stringProp>
+        <stringProp name="HTTPSampler.protocol">https</stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <stringProp name="HTTPSampler.concurrentPool">4</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Number of Processes" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1375525852000</longProp>
+        <longProp name="ThreadGroup.end_time">1375525852000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="SN" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${encTermSN}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">SN</stringProp>
+              </elementProp>
+              <elementProp name="CM" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${cmMode}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">CM</stringProp>
+              </elementProp>
+              <elementProp name="DATA" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${login_Data}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">DATA</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/TMS_3/CTMS_Login.php</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import net.minidev.json.JSONObject;
+import org.apache.commons.codec.binary.Base64;
+
+try{
+	JSONObject jsonObject = new JSONObject();
+	jsonObject.put(&quot;VR&quot;, &quot;1&quot;);
+	jsonObject.put(&quot;SN&quot;, vars.get(&quot;terminalSN&quot;));
+	jsonObject.put(&quot;IP&quot;, InetAddress.getLocalHost().getHostAddress());
+	vars.put(&quot;encTermSN&quot;, Base64.encodeBase64String(vars.get(&quot;terminalSN&quot;).getBytes()));
+	vars.put(&quot;login_Data&quot;, Base64.encodeBase64String(jsonObject.toString().getBytes()));
+}catch(JSONException e){
+	
+}
+</stringProp>
+          </BeanShellPreProcessor>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import net.minidev.json.JSONObject;
+import net.minidev.json.parser.JSONParser;
+import org.apache.commons.codec.binary.Base64;
+
+byte[] responseData = prev.getResponseData();
+int status = (((responseData[0] &amp; 0xFF) &lt;&lt; 8)  | (responseData[1] &amp; 0xFF));
+if(status == 0)
+{
+	try{
+		String responseString = new String(responseData, 2, responseData.length - 2);
+		String jsonString = new String(Base64.decodeBase64(responseString));
+		JSONParser jsonParser = new JSONParser(JSONParser.MODE_JSON_SIMPLE);
+		JSONObject jsonObject = (JSONObject) jsonParser.parse(jsonString);
+		vars.put(&quot;sessionID&quot;, jsonObject.getAsString(&quot;SESSION_ID&quot;));
+		vars.put(&quot;nextPath&quot;, jsonObject.getAsString(&quot;NEXT_PATH&quot;));
+		log.info(&quot;Response : &quot;+jsonString);
+	}catch(JSONException e){
+		
+	}
+}
+else
+{
+	log.info(&quot;status=&quot;+status);
+}
+vars.put(&quot;Status&quot;, Integer.toString(status));
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+          <stringProp name="IfController.condition">${__jexl3(&quot;${Status}&quot;== &quot;0&quot;,)}</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GetInfo" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="SN" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${encTermSN}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">SN</stringProp>
+                </elementProp>
+                <elementProp name="DATA" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${getinfo_Data}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">DATA</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/${nextPath}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script">import net.minidev.json.JSONArray;
+import net.minidev.json.JSONObject;
+import org.apache.commons.codec.binary.Base64;
+
+try{
+	JSONObject jsonObject = new JSONObject();
+	jsonObject.put(&quot;SESSION_ID&quot;, vars.get(&quot;sessionID&quot;));
+	jsonObject.put(&quot;INFO_VERSION&quot;, &quot;JMeter_TestInfo&quot;);
+	JSONObject infoObject = new JSONObject();
+	JSONArray systemArray = new JSONArray();
+	JSONObject fileObject = new JSONObject();
+	fileObject.put(&quot;FT&quot;, 0x01);
+	fileObject.put(&quot;FN&quot;, &quot;Castles_App&quot;);
+	fileObject.put(&quot;FV&quot;, &quot;1234&quot;);
+	fileObject.put(&quot;FVC&quot;, 5);
+	fileObject.put(&quot;PN&quot;, &quot;com.castech.Castles_App&quot;);
+	fileObject.put(&quot;IT&quot;, 1534831554);
+	fileObject.put(&quot;UT&quot;, 1534831654);
+	systemArray.add(fileObject);
+	JSONObject deviceObject = new JSONObject();
+	deviceObject.put(&quot;CT_CNT&quot;, 100);
+	deviceObject.put(&quot;CL_CNT&quot;, 150);
+	deviceObject.put(&quot;MSR_CNT&quot;, 350);
+	deviceObject.put(&quot;CT_HOUR&quot;, 50);
+	deviceObject.put(&quot;CL_HOUR&quot;, 120);
+	deviceObject.put(&quot;MSR_HOUR&quot;, 80);
+	deviceObject.put(&quot;PRINTER_LEN&quot;, 900);
+	deviceObject.put(&quot;BTN_CNT&quot;, 10050);
+	deviceObject.put(&quot;CHARGE_TIME&quot;, 15000);
+	deviceObject.put(&quot;SCREEN_TIME&quot;, 25000);
+	infoObject.put(&quot;LTZ&quot;,&quot;+8&quot;);
+	infoObject.put(&quot;LA&quot;,&quot;Asia/Taipei&quot;);
+	infoObject.put(&quot;SYSTEM&quot;, systemArray);
+	infoObject.put(&quot;DEVICE&quot;, deviceObject);
+	jsonObject.put(&quot;INFO&quot;, infoObject);
+	jsonObject.put(&quot;DATA_EXCHANGE&quot;, 0);
+	jsonObject.put(&quot;DL_CONFIG&quot;, 0);
+	vars.put(&quot;getinfo_Data&quot;, Base64.encodeBase64String(jsonObject.toString().getBytes()));
+}catch(JSONException e){
+	
+}
+</stringProp>
+            </BeanShellPreProcessor>
+            <hashTree/>
+            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script">import net.minidev.json.JSONObject;
+import net.minidev.json.parser.JSONParser;
+import org.apache.commons.codec.binary.Base64;
+
+byte[] responseData = prev.getResponseData();
+int status = (((responseData[0] &amp; 0xFF) &lt;&lt; 8) | (responseData[1] &amp; 0xFF));
+if(status == 0)
+{
+	try{
+		String responseString = new String(responseData, 2, responseData.length - 2);
+		String jsonString = new String(Base64.decodeBase64(responseString));
+		JSONParser jsonParser = new JSONParser(JSONParser.MODE_JSON_SIMPLE);
+		JSONObject jsonObject = (JSONObject) jsonParser.parse(jsonString);
+		vars.put(&quot;nextPath&quot;, jsonObject.getAsString(&quot;NEXT_PATH&quot;));
+		vars.put(&quot;DLHS_Path&quot;, jsonObject.getAsString(&quot;NEXT_PATH&quot;));
+		JSONObject infoObject = (JSONObject) jsonObject.get(&quot;INFO&quot;);
+		JSONObject updateListObject = (JSONObject) infoObject.get(&quot;UPDATE_LIST&quot;);
+		vars.put(&quot;updateList_ID&quot;, updateListObject.getAsString(&quot;ID&quot;));
+		log.info(&quot;Get Info Response : &quot;+jsonString);
+	}catch(JSONException e){
+		
+	}
+}
+else
+{
+	log.info(&quot;status=&quot;+status);
+}
+vars.put(&quot;Status&quot;, Integer.toString(status));</stringProp>
+            </BeanShellPostProcessor>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="DownloadHS_UpdateList" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="SN" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${encTermSN}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">SN</stringProp>
+                </elementProp>
+                <elementProp name="DATA" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${downloadHS_Data}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">DATA</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/${DLHS_Path}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script">import net.minidev.json.JSONArray;
+import net.minidev.json.JSONObject;
+import org.apache.commons.codec.binary.Base64;
+
+try{
+	JSONObject jsonObject = new JSONObject();
+	jsonObject.put(&quot;SESSION_ID&quot;, vars.get(&quot;sessionID&quot;));
+	jsonObject.put(&quot;FT&quot;, 255);
+	jsonObject.put(&quot;ID&quot;, vars.get(&quot;updateList_ID&quot;));
+	vars.put(&quot;downloadHS_Data&quot;, Base64.encodeBase64String(jsonObject.toString().getBytes()));
+}catch(JSONException e){
+	
+}
+</stringProp>
+            </BeanShellPreProcessor>
+            <hashTree/>
+            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script">import net.minidev.json.JSONObject;
+import net.minidev.json.parser.JSONParser;
+import org.apache.commons.codec.binary.Base64;
+
+byte[] responseData = prev.getResponseData();
+int status = (((responseData[0] &amp; 0xFF) &lt;&lt; 8)  | (responseData[1] &amp; 0xFF));
+if(status == 0)
+{
+	try{
+		String responseString = new String(responseData, 2, responseData.length - 2);
+		String jsonString = new String(Base64.decodeBase64(responseString));
+		JSONParser jsonParser = new JSONParser(JSONParser.MODE_JSON_SIMPLE);
+		JSONObject jsonObject = (JSONObject) jsonParser.parse(jsonString);
+		vars.put(&quot;nextPath&quot;, jsonObject.getAsString(&quot;NEXT_PATH&quot;));
+		JSONObject fileObject = (JSONObject) jsonObject.get(&quot;FILE&quot;);
+		vars.put(&quot;download_FilePath&quot;, fileObject.getAsString(&quot;PATH&quot;));
+		vars.put(&quot;download_FileName&quot;, fileObject.getAsString(&quot;FN&quot;));
+		vars.put(&quot;download_FileSize&quot;, fileObject.getAsString(&quot;FS&quot;));
+		vars.put(&quot;download_Position&quot;, Integer.toString(0));
+		vars.put(&quot;download_CompleteSize&quot;, Integer.toString(0));
+	}catch(JSONException e){
+		
+	}
+}
+else
+{
+	log.info(&quot;status=&quot;+status);
+}
+vars.put(&quot;Status&quot;, Integer.toString(status));</stringProp>
+            </BeanShellPostProcessor>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Download_UpdateList" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="SN" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${encTermSN}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">SN</stringProp>
+                </elementProp>
+                <elementProp name="DATA" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${download_Data}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">DATA</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/${nextPath}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script">import net.minidev.json.JSONArray;
+import net.minidev.json.JSONObject;
+import org.apache.commons.codec.binary.Base64;
+
+try{
+	JSONObject jsonObject = new JSONObject();
+	jsonObject.put(&quot;SESSION_ID&quot;, vars.get(&quot;sessionID&quot;));
+	jsonObject.put(&quot;PATH&quot;, vars.get(&quot;download_FilePath&quot;));
+	jsonObject.put(&quot;DP&quot;, vars.get(&quot;download_Position&quot;));
+	jsonObject.put(&quot;DS&quot;, 62780);
+//	log.info(jsonObject.toString());
+	vars.put(&quot;download_Data&quot;, Base64.encodeBase64String(jsonObject.toString().getBytes()));
+}catch(JSONException e){
+	
+}
+</stringProp>
+            </BeanShellPreProcessor>
+            <hashTree/>
+            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script">import net.minidev.json.JSONArray;
+import net.minidev.json.JSONObject;
+import net.minidev.json.parser.JSONParser;
+import org.apache.commons.codec.binary.Base64;
+
+byte[] responseData = prev.getResponseData();
+int status = (((responseData[0] &amp; 0xFF) &lt;&lt; 8)  | (responseData[1] &amp; 0xFF));
+if(status == 0)
+{
+	try{
+		String responseString = new String(responseData, 2, responseData.length - 2);
+		String jsonString = new String(Base64.decodeBase64(responseString));
+		log.info(&quot;Get Update List Response :&quot; + jsonString);
+		JSONParser jsonParser = new JSONParser(JSONParser.MODE_JSON_SIMPLE);
+		JSONObject jsonObject = (JSONObject) jsonParser.parse(jsonString);
+		JSONArray listArray = jsonObject.get(&quot;INFO&quot;);
+		vars.put(&quot;updateList&quot;, listArray.toString());
+		vars.put(&quot;download_Index&quot;, Integer.toString(0));
+		vars.put(&quot;download_TotalFileCount&quot;, Integer.toString(listArray.size()));
+	}catch(JSONException e){
+		
+	}
+}
+vars.put(&quot;Status&quot;, Integer.toString(status));</stringProp>
+            </BeanShellPostProcessor>
+            <hashTree/>
+          </hashTree>
+          <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="File While" enabled="true">
+            <stringProp name="WhileController.condition">${__javaScript(${download_Index} &lt; ${download_TotalFileCount})}</stringProp>
+          </WhileController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="DownloadHS_File" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="SN" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">${encTermSN}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">SN</stringProp>
+                  </elementProp>
+                  <elementProp name="DATA" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">${downloadHS_Data}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">DATA</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/${DLHS_Path}</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">import net.minidev.json.JSONArray;
+import net.minidev.json.JSONObject;
+import net.minidev.json.parser.JSONParser;
+import org.apache.commons.codec.binary.Base64;
+
+try{
+	String updateListString = vars.get(&quot;updateList&quot;);
+	log.info(updateListString);
+	JSONParser jsonParser = new JSONParser(JSONParser.MODE_JSON_SIMPLE);
+	JSONArray listArray = (JSONArray) jsonParser.parse(updateListString);
+	JSONObject fileObject = listArray.get(Integer.parseInt(vars.get(&quot;download_Index&quot;)));
+//	log.info(fileObject.get(&quot;TYPE&quot;).toString());
+//	log.info(fileObject.get(&quot;ID&quot;).toString());
+	JSONObject jsonObject = new JSONObject();
+	jsonObject.put(&quot;SESSION_ID&quot;, vars.get(&quot;sessionID&quot;));
+	jsonObject.put(&quot;FT&quot;, fileObject.get(&quot;TYPE&quot;).toString());
+	jsonObject.put(&quot;ID&quot;, fileObject.get(&quot;ID&quot;).toString());
+	vars.put(&quot;downloadHS_Data&quot;, Base64.encodeBase64String(jsonObject.toString().getBytes()));
+}catch(JSONException e){
+	
+}
+</stringProp>
+              </BeanShellPreProcessor>
+              <hashTree/>
+              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">import net.minidev.json.JSONObject;
+import net.minidev.json.parser.JSONParser;
+import org.apache.commons.codec.binary.Base64;
+import java.io.IOException;
+import java.nio.file.Files;
+
+byte[] responseData = prev.getResponseData();
+int status = (((responseData[0] &amp; 0xFF) &lt;&lt; 8)  | (responseData[1] &amp; 0xFF));
+log.info(&quot;DHS Status = &quot;+status);
+if(status == 0)
+{
+	try{
+		String responseString = new String(responseData, 2, responseData.length - 2);
+		String jsonString = new String(Base64.decodeBase64(responseString));
+		JSONParser jsonParser = new JSONParser(JSONParser.MODE_JSON_SIMPLE);
+		JSONObject jsonObject = (JSONObject) jsonParser.parse(jsonString);
+		vars.put(&quot;nextPath&quot;, jsonObject.getAsString(&quot;NEXT_PATH&quot;));
+		JSONObject fileObject = (JSONObject) jsonObject.get(&quot;FILE&quot;);
+		vars.put(&quot;download_FilePath&quot;, fileObject.getAsString(&quot;PATH&quot;));
+		log.info(&quot;Downlaod File Path :&quot; + vars.get(&quot;download_FilePath&quot;));
+		vars.put(&quot;download_FileName&quot;, fileObject.getAsString(&quot;FN&quot;));
+		log.info(&quot;Downlaod File Name :&quot; + vars.get(&quot;download_FileName&quot;));
+		vars.put(&quot;download_FileSize&quot;, fileObject.getAsString(&quot;FS&quot;));
+		log.info(&quot;Downlaod File Total Size :&quot; + vars.get(&quot;download_FileSize&quot;));
+		vars.put(&quot;download_Position&quot;, Integer.toString(0));
+		vars.put(&quot;download_CompleteSize&quot;, Integer.toString(0));
+		vars.put(&quot;download_Index&quot;, Integer.toString(Integer.parseInt(vars.get(&quot;download_Index&quot;)) +1));
+		
+	}catch(FileException e){
+		log.info(&quot;File Error&quot;);
+	}
+}
+
+</stringProp>
+              </BeanShellPostProcessor>
+              <hashTree/>
+            </hashTree>
+            <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="Download While" enabled="true">
+              <stringProp name="WhileController.condition">${__javaScript(${download_CompleteSize} &lt; ${download_FileSize})}</stringProp>
+            </WhileController>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Download_File" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="SN" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${encTermSN}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">SN</stringProp>
+                    </elementProp>
+                    <elementProp name="DATA" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${download_Data}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">DATA</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/${nextPath}</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
+                  <boolProp name="resetInterpreter">false</boolProp>
+                  <stringProp name="parameters"></stringProp>
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="script">import net.minidev.json.JSONArray;
+import net.minidev.json.JSONObject;
+import org.apache.commons.codec.binary.Base64;
+
+try{
+	JSONObject jsonObject = new JSONObject();
+	jsonObject.put(&quot;SESSION_ID&quot;, vars.get(&quot;sessionID&quot;));
+	jsonObject.put(&quot;PATH&quot;, vars.get(&quot;download_FilePath&quot;));
+	jsonObject.put(&quot;DP&quot;, Integer.parseInt(vars.get(&quot;download_Position&quot;)) + Integer.parseInt(vars.get(&quot;download_CompleteSize&quot;)));
+	jsonObject.put(&quot;DS&quot;, 62780);
+//	log.info(jsonObject.toString());
+	vars.put(&quot;download_Data&quot;, Base64.encodeBase64String(jsonObject.toString().getBytes()));
+}catch(JSONException e){
+	
+}
+</stringProp>
+                </BeanShellPreProcessor>
+                <hashTree/>
+                <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+                  <boolProp name="resetInterpreter">false</boolProp>
+                  <stringProp name="parameters"></stringProp>
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="script">import net.minidev.json.JSONArray;
+import net.minidev.json.JSONObject;
+import net.minidev.json.parser.JSONParser;
+import org.apache.commons.codec.binary.Base64;
+
+byte[] responseData = prev.getResponseData();
+int status = (((responseData[0] &amp; 0xFF) &lt;&lt; 8)  | (responseData[1] &amp; 0xFF));
+if(status == 0)
+{
+	String completeSize = Integer.toString(responseData.length - 2 + Integer.parseInt(vars.get(&quot;download_CompleteSize&quot;)));
+	vars.put(&quot;download_CompleteSize&quot;, completeSize);
+	log.info(&quot;File Download Complete Size :&quot; + completeSize);
+	try
+	{
+		FileOutputStream downloadedFile = new FileOutputStream(vars.get(&quot;store_FilePath&quot;) + vars.get(&quot;download_FileName&quot;), true);
+		downloadedFile.write(responseData, 2, responseData.length - 2);
+		downloadedFile.flush();
+		downloadedFile.close();
+	}catch(IOException e){
+		e.printStackTrace();
+	}
+}
+</stringProp>
+                </BeanShellPostProcessor>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Logout" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="SN" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${encTermSN}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">SN</stringProp>
+              </elementProp>
+              <elementProp name="DATA" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${logout_Data}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">DATA</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/TMS_3/CTMS_Logout.php</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="script">import net.minidev.json.JSONObject;
+import org.apache.commons.codec.binary.Base64;
+
+try{
+	JSONObject jsonObject = new JSONObject();
+	jsonObject.put(&quot;SESSION_ID&quot;, vars.get(&quot;sessionID&quot;));
+	vars.put(&quot;logout_Data&quot;, Base64.encodeBase64String(jsonObject.toString().getBytes()));
+}catch(JSONException e){
+	
+}
+</stringProp>
+          </BeanShellPreProcessor>
+          <hashTree/>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>false</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>false</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>true</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
